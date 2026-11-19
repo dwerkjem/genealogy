@@ -1,0 +1,16 @@
+# Live Gramps database + full (non-anonymized) export. tree/ holds the public, anonymized snapshot.
+gramps-db/
+# Raw downloads (e.g. FamilySearch GEDCOM pulls) — re-creatable, may hold living people's data
+imports/*
+!imports/.gitkeep
+# Python / uv
+.venv/
+__pycache__/
+# Editors / OS
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db
+
+# Real names to block from commits (see tools/hooks/check_private.py)
+.private-terms
